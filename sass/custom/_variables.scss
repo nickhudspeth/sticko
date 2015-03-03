@@ -6,7 +6,7 @@
 
   Definitions
   -----------------------
-
+  Cyan:		 #00B7EB
   Orange:        #DD4B39
   Light Grey:    #EBEBEB
   Grey:          #999
@@ -17,6 +17,7 @@
 
 /* Backgrounds */
 $background-main:        #F0F0F0;
+$background-cyan: 	 #00B7EB;
 $background-orange:      #DD4B39;
 $background-darkgrey:    #333;
 $background-grey: 		 #999;
@@ -31,11 +32,11 @@ $font-family-bold:       "Nexa Bold", "Helvetica Neue", Helvetica, sans-serif, H
 
 /* Font colors */
 $text-color-main: 		 $background-darkgrey;
-$text-color-link: 		 $background-orange;
+$text-color-link: 		 $background-cyan;
 $text-color-grey: 		 $background-grey;
 $text-color-lightgrey:   $background-lightgrey;
 $text-color-bright:      $background-main;
 
 
 /* Buttons */
-$bg-btn-default: 		 $background-orange;
+$bg-btn-default: 		 $background-cyan;

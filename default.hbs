@@ -13,8 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{! Styles'n'Scripts }}
+    <link rel="stylesheet" href="{{asset "css/prism.css"}}" />
     <link rel="stylesheet" href="{{asset "/css/style.css"}}">
-
     {{! Touch icons and favicon }}
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{asset "/images/apple-touch-icon-144x144-precomposed.png"}}" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{asset "/images/apple-touch-icon-114x114-precomposed.png"}}" />
@@ -27,6 +27,19 @@
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
+    
+    <script>
+    var _gaq = _gaq || [];  
+    _gaq.push(['_setAccount', 'UA-4XXXXXXX-1']);  
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
 
 </head>
 <body class="{{body_class}}">
@@ -38,7 +51,6 @@
         {{{body}}}
     </section>
 </div>
-
 {{! Ghost outputs important scripts and data with this tag }}
 {{ghost_foot}}
 
@@ -46,6 +58,7 @@
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 <script src="{{asset "/js/plugins/jquery.fitvids.js"}}"></script>
 <script src="{{asset "/js/script.js"}}"></script>
+<script src="{{asset "js/prism.js"}}"></script>
 {{#if post}}
     <script async type="text/javascript" src="//apis.google.com/js/plusone.js?callback=gpcb"></script>
 {{/if}}

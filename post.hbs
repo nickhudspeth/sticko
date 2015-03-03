@@ -1,8 +1,32 @@
 {{!< default}}
 {{#post}}
     <article class="post">
-        
-        <header class="post-header">
+	{{#if image}}
+	<style>
+	.my-cover-image{
+	position: relative:
+	width:100%;
+	height:200px;
+	position:relative;
+	transform:translateY(-10%);
+	box-sizing:content-box;
+	overflow:hidden;
+	}
+	.my-cover-image img {
+	position:absolute;
+	left:50%;
+	top:50%;
+	height:auto;
+	width:100%;
+	max-width:150%;
+	transform: translate(-50%,-50%);
+	}
+	</style>
+	<div class="my-cover-image">
+	<img src="{{image}}" height="auto" width="100%"alt="{{title}}"class="my-cover-image" overflow="hidden"/>
+        </div>
+	{{/if}}
+	<header class="post-header">
             <h1>{{title}}</h1>
             
             <!-- Post meta -->
