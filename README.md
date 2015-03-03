@@ -1,9 +1,15 @@
 Sticko - A free Ghost theme :)
 =======
 
+This is a modification of the original sticko theme for nickhudspeth.com.
+### Modifications 
+* Resized sidebar
+* Added support for blog post cover photos
+
 
 ![screen](http://damianmuti.com/downloads/screen.jpg)
 
+The original version of this document appears below:
 ## About this theme
 
 I've been working as a UI/UX Dev and Art Director for the last 12 years. I've also been using the web as a huge source of information for my personal and professional career.
