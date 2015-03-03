@@ -36,7 +36,10 @@ body {
     &:first-of-type {margin-top:3.75em}
     &:last-of-type {padding-bottom:3.75em}
 
-    img {@extend pre}
+    img {
+	@extend pre;
+	padding:0em;
+	}
 }
 
     .post-header {margin-bottom:3.125em; overflow:hidden}
